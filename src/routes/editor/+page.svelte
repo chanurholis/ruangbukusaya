@@ -1,7 +1,7 @@
 <script lang="ts">
 import RichText from '$lib/components/RichText.svelte';
 
-let content = '<p>Hello <strong>Quill!</strong></p>';
+let content = '';
 </script>
 
 <div class="container mx-auto p-6">
