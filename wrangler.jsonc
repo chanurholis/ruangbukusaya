@@ -6,7 +6,7 @@
 	"observability": {
 		"enabled": true
 	},
-  "vars": {
-    "PUBLIC_GA_MEASUREMENT_ID": "G-Y63HT1R5W3"
-  }
+	"vars": {
+		"PUBLIC_GA_MEASUREMENT_ID": "G-Y63HT1R5W3"
+	}
 }
