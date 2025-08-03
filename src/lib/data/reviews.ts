@@ -11,7 +11,21 @@ export const reviews: Review[] = [
     "slug": "bumi-manusia-gema-suara-pribumi-di-persimpangan-era-kolonial",
     "title": "Bumi Manusia: Gema Suara Pribumi di Persimpangan Era Kolonial",
     "excerpt": "Sebuah epik sejarah yang menggugah jiwa. Kisah Minke melawan arus penindasan kolonial dengan senjata paling tajam: pengetahuan, cinta, dan tulisan.",
-    "content": "<p>Jarang sekali sebuah karya sastra mampu menangkap gejolak zaman dengan begitu kuat seperti <strong>Bumi Manusia</strong>. Pramoedya Ananta Toer tidak hanya menulis sebuah novel; ia melukis kanvas besar tentang Hindia Belanda di awal abad ke-20, di mana modernitas dan tradisi feodal bertabrakan di bawah cengkeraman kolonialisme.</p><p><br></p><p>Kita diajak menyelami kehidupan <strong>Minke</strong>, seorang pemuda pribumi dari keluarga priyayi yang memiliki kesempatan langka mengenyam pendidikan Eropa. Ia adalah anomali: seorang Jawa yang berpikir seperti orang Eropa, menulis dengan fasih dalam bahasa Belanda, namun hatinya tetap tertambat pada tanah airnya. Melalui mata Minke, kita menyaksikan ketidakadilan yang merajalela, di mana status sosial dan warna kulit menentukan takdir seseorang.</p><p><br></p><p>Namun, ini bukanlah sekadar kisah penindasan. Ini adalah kisah perlawanan. Perlawanan Minke bukanlah dengan senjata fisik, melainkan </p><p>melalui pengetahuannya yang luas dan tulisannya yang tajam. Pertemuannya dengan keluarga Nyai Ontosoroh membuka matanya. <strong>Nyai Ontosoroh</strong> sendiri adalah karakter yang luar biasa; seorang 'gundik' yang ditolak oleh masyarakatnya, namun memiliki kecerdasan, keteguhan, dan martabat yang melampaui para Tuan Eropa. Dialah mentor sejati Minke.</p><p><br></p><p>Kisah cintanya dengan <strong>Annelies Mellema</strong>, putri Nyai Ontosoroh yang berdarah campuran, menjadi inti emosional dari novel ini. Cinta mereka yang murni dan tulus harus berhadapan dengan tembok hukum kolonial yang kejam dan tidak berpihak pada pribumi.</p><p>Membaca <em>Bumi Manusia</em> adalah sebuah pengalaman yang mendalam. Pramoedya mengajak kita untuk bertanya: apa artinya menjadi manusia di tengah sistem yang merendahkan kemanusiaan itu sendiri? Ini adalah bacaan wajib bagi siapa saja yang ingin memahami akar sejarah bangsa Indonesia dan kekuatan sastra sebagai suara perlawanan.</p>",
+    "content": `
+<p>Jarang sekali sebuah karya sastra mampu menangkap gejolak zaman dengan begitu kuat seperti  <strong>Bumi Manusia</strong>. Pramoedya Ananta Toer tidak hanya menulis sebuah novel; ia melukis kanvas besar tentang Hindia Belanda di awal abad ke-20, di mana modernitas dan tradisi feodal bertabrakan di bawah cengkeraman kolonialisme.</p>
+<p>
+</p>
+<p>Kita diajak menyelami kehidupan <strong>Minke</strong>, seorang pemuda pribumi dari keluarga priyayi yang memiliki kesempatan langka mengenyam pendidikan Eropa. Ia adalah anomali: seorang Jawa yang berpikir seperti orang Eropa, menulis dengan fasih dalam bahasa Belanda, namun hatinya tetap tertambat pada tanah airnya. Melalui mata Minke, kita menyaksikan ketidakadilan yang merajalela, di mana status sosial dan warna kulit menentukan takdir seseorang.</p>
+<p>
+
+</p>
+<p>Namun, ini bukanlah sekadar kisah penindasan. Ini adalah kisah perlawanan. Perlawanan Minke bukanlah dengan senjata fisik, melainkan </p>
+<p>melalui pengetahuannya yang luas dan tulisannya yang tajam. Pertemuannya dengan keluarga Nyai Ontosoroh membuka matanya. <strong>Nyai Ontosoroh</strong> sendiri adalah karakter yang luar biasa; seorang 'gundik' yang ditolak oleh masyarakatnya, namun memiliki kecerdasan, keteguhan, dan martabat yang melampaui para Tuan Eropa. Dialah mentor sejati Minke.</p>
+<p>
+</p>
+<p>Kisah cintanya dengan <strong>Annelies Mellema</strong>, putri Nyai Ontosoroh yang berdarah campuran, menjadi inti emosional dari novel ini. Cinta mereka yang murni dan tulus harus berhadapan dengan tembok hukum kolonial yang kejam dan tidak berpihak pada pribumi.</p>
+<p>Membaca <em>Bumi Manusia</em> adalah sebuah pengalaman yang mendalam. Pramoedya mengajak kita untuk bertanya: apa artinya menjadi manusia di tengah sistem yang merendahkan kemanusiaan itu sendiri? Ini adalah bacaan wajib bagi siapa saja yang ingin memahami akar sejarah bangsa Indonesia dan kekuatan sastra sebagai suara perlawanan.</p>
+`,
     "date": "2025-08-03"
   }
 ];
