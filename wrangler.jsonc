@@ -5,14 +5,14 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "my-svelte-app",
+  "vars": {
+    "PUBLIC_GA_MEASUREMENT_ID": "G-Y63HT1R5W3"
+  },
 	"compatibility_date": "2025-05-10",
 	"pages_build_output_dir": ".svelte-kit/cloudflare",
 	"observability": {
 		"enabled": true
 	},
-  "vars": {
-    "PUBLIC_GA_MEASUREMENT_ID": "G-Y63HT1R5W3"
-  }
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
