@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import fs from 'fs/promises'; // Menggunakan Node.js File System module
+import fs from 'fs/promises';
 import type { RequestHandler } from './$types';
 import type { Review } from '$lib/data/reviews';
 
@@ -9,12 +9,12 @@ export const POST: RequestHandler = async ({ request }) => {
 	try {
 		const newReview: Review = await request.json();
 
-		// Validasi sederhana di sisi server
+		// Validasi sisi server
 		if (
 			!newReview.title ||
 			!newReview.slug ||
 			!newReview.content ||
-			newReview.content === '<p><br></p>'
+			newReview.content.trim() === '<p><br></p>'
 		) {
 			return json(
 				{ success: false, message: 'Title, slug, and content are required.' },
@@ -25,25 +25,36 @@ export const POST: RequestHandler = async ({ request }) => {
 		// Baca file yang ada
 		const fileContent = await fs.readFile(filePath, 'utf-8');
 
-		// Cari posisi untuk menyisipkan data baru (sebelum kurung siku penutup array)
-		const insertionPoint = fileContent.lastIndexOf('];');
-		if (insertionPoint === -1) {
-			throw new Error("Invalid format in reviews.ts: could not find closing '];'");
+		// Cari posisi array di dalam file
+		const arrayStartIndex = fileContent.indexOf('[');
+		const arrayEndIndex = fileContent.lastIndexOf(']');
+
+		if (arrayStartIndex === -1 || arrayEndIndex === -1) {
+			throw new Error("Invalid format in reviews.ts: could not find array brackets '[]'.");
 		}
 
-		// Format entri baru menjadi string JSON
-		const newEntryString = `,\n\t${JSON.stringify(newReview, null, '\t')}`;
+		// Periksa apakah ada konten di antara kurung siku untuk menentukan apakah array kosong
+		const arrayContent = fileContent.substring(arrayStartIndex + 1, arrayEndIndex).trim();
+		const isArrayEmpty = arrayContent.length === 0;
 
-		// Sisipkan entri baru ke dalam konten file
+		// Format entri baru. Jangan tambahkan koma di depan jika array kosong.
+		const newEntryString = `${isArrayEmpty ? '' : ','}\n\t${JSON.stringify(newReview, null, '\t')}`;
+
+		// Sisipkan entri baru tepat sebelum kurung siku penutup ']'
 		const updatedContent =
-			fileContent.slice(0, insertionPoint) + newEntryString + fileContent.slice(insertionPoint);
+			fileContent.slice(0, arrayEndIndex) + newEntryString + fileContent.slice(arrayEndIndex);
 
-		// Tulis kembali konten yang sudah diperbarui ke file
+		// Tulis kembali file dengan konten yang sudah diperbarui
 		await fs.writeFile(filePath, updatedContent, 'utf-8');
 
 		return json({ success: true, message: 'Review added successfully!' }, { status: 201 });
 	} catch (error) {
-		console.error(error);
-		return json({ success: false, message: 'Failed to add review.' }, { status: 500 });
+		// Log error yang sebenarnya ke konsol server untuk debugging
+		console.error('Error adding review:', error);
+		// Kirim pesan error umum ke klien
+		return json(
+			{ success: false, message: 'Failed to add review. Check server logs for details.' },
+			{ status: 500 }
+		);
 	}
 };

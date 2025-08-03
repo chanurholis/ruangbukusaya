@@ -3,7 +3,7 @@
 	"name": "ruangbukusaya",
 	"compatibility_date": "2025-05-10",
 	"pages_build_output_dir": ".svelte-kit/cloudflare",
-  "compatibility_flags": ["nodejs_compat"],
+	"compatibility_flags": ["nodejs_compat"],
 	"observability": {
 		"enabled": true
 	},
