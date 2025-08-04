@@ -1,17 +1,18 @@
 export type Review = {
-  slug: string;
-  title: string;
-  date: string;
-  excerpt: string;
-  content: string;
+	slug: string;
+	title: string;
+	date: string;
+	excerpt: string;
+	content: string;
 };
 
 export const reviews: Review[] = [
-  {
-    "slug": "bumi-manusia-gema-suara-pribumi-di-persimpangan-era-kolonial",
-    "title": "Bumi Manusia: Gema Suara Pribumi di Persimpangan Era Kolonial",
-    "excerpt": "Sebuah epik sejarah yang menggugah jiwa. Kisah Minke melawan arus penindasan kolonial dengan senjata paling tajam: pengetahuan, cinta, dan tulisan.",
-    "content": `
+	{
+		slug: 'bumi-manusia-gema-suara-pribumi-di-persimpangan-era-kolonial',
+		title: 'Bumi Manusia: Gema Suara Pribumi di Persimpangan Era Kolonial',
+		excerpt:
+			'Sebuah epik sejarah yang menggugah jiwa. Kisah Minke melawan arus penindasan kolonial dengan senjata paling tajam: pengetahuan, cinta, dan tulisan.',
+		content: `
 <p>Jarang sekali sebuah karya sastra mampu menangkap gejolak zaman dengan begitu kuat seperti  <strong>Bumi Manusia</strong>. Pramoedya Ananta Toer tidak hanya menulis sebuah novel; ia melukis kanvas besar tentang Hindia Belanda di awal abad ke-20, di mana modernitas dan tradisi feodal bertabrakan di bawah cengkeraman kolonialisme.</p>
 <p>
 </p>
@@ -26,6 +27,6 @@ export const reviews: Review[] = [
 <p>Kisah cintanya dengan <strong>Annelies Mellema</strong>, putri Nyai Ontosoroh yang berdarah campuran, menjadi inti emosional dari novel ini. Cinta mereka yang murni dan tulus harus berhadapan dengan tembok hukum kolonial yang kejam dan tidak berpihak pada pribumi.</p>
 <p>Membaca <em>Bumi Manusia</em> adalah sebuah pengalaman yang mendalam. Pramoedya mengajak kita untuk bertanya: apa artinya menjadi manusia di tengah sistem yang merendahkan kemanusiaan itu sendiri? Ini adalah bacaan wajib bagi siapa saja yang ingin memahami akar sejarah bangsa Indonesia dan kekuatan sastra sebagai suara perlawanan.</p>
 `,
-    "date": "2025-08-03"
-  }
+		date: '2025-08-03'
+	}
 ];
