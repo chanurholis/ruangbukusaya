@@ -125,13 +125,13 @@
 		</div>
 	</form>
 
-	<!-- <hr class="my-8" /> -->
+	<hr class="my-8" />
 
-	<!-- <div class="prose max-w-none"> -->
-	<!-- 	<h2>Live Preview</h2> -->
-	<!-- 	<div>{@html content}</div> -->
-	<!---->
-	<!-- 	<h2 class="mt-6">HTML Preview</h2> -->
-	<!-- 	<pre class="overflow-x-auto rounded-md bg-gray-100 p-4"><code>{content}</code></pre> -->
-	<!-- </div> -->
+	<div class="prose max-w-none">
+		<h2>Live Preview</h2>
+		<div>{@html content}</div>
+
+		<h2 class="mt-6">HTML Preview</h2>
+		<pre class="overflow-x-auto rounded-md p-4"><code>{content}</code></pre>
+	</div>
 </div>
