@@ -23,13 +23,5 @@ export const reviews: Review[] = [
 		date: '2025-08-03 23:55',
 		author: 'CN'
 	},
-  {
-  "slug": "affan-kurniawan-dilindas-tanpa-perlawanan",
-  "title": "Affan Kurniawan Dilindas Tanpa Perlawanan",
-  "excerpt": "Penuh Duka.",
-  "content": "<p>Kamis, 28 Agustus 2025 sekitar pukul 19:47 Affan Kurniawan sedang mencari nafkah, yang dinantikan pulang keluarganya dengan selamat, dilindas oleh <strong>POLISI TAK BERKEMANUSIAAN</strong>.</p><p>Hari ini akan kita kenang, terutama bagi korban namanya akan selalu kita ingat, atas kejahatan yang menimpanya.</p><p>Turut berduka cita bagi keluarga yang ditinggalkan, bagi kita semua. 🥀🕊️</p>",
-  "date": "2025-08-28 19:47",
-  "author": "CN"
-}
 
 ];
